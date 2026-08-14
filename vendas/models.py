@@ -46,12 +46,12 @@ class ItemVenda(models.Model):
 
     quantidade = models.PositiveIntegerField()
 
-    precoUnitario = models.DecimalField(
+    preco_unitario = models.DecimalField(
         max_digits=10,
         decimal_places=2,
     )
 
-    subPreco = models.DecimalField(
+    sub_preco = models.DecimalField(
         max_digits=10,
         decimal_places=2
     )

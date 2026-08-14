@@ -15,7 +15,7 @@ class Cliente(models.Model):
         blank=True
     )
 
-    limiteCrediario = models.DecimalField(
+    limite_crediario = models.DecimalField(
         max_digits=10,
         decimal_places=2,
         default=0
@@ -35,7 +35,7 @@ class Credito(models.Model):
         related_name='creditos'
     )
 
-    valorTotal = models.DecimalField(
+    valor_total = models.DecimalField(
         max_digits=10,
         decimal_places=2
     )
@@ -66,9 +66,9 @@ class Parcela(models.Model):
         decimal_places=2
     )
 
-    dataVencimento = models.DateField()
+    data_vencimento = models.DateField()
 
-    dataPagamento = models.DateField(
+    data_pagamento = models.DateField(
         blank=True,
         null=True
     )

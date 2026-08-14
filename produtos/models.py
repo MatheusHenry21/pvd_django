@@ -20,17 +20,17 @@ class Produto(models.Model):
         related_name="produtos"
     )
 
-    precoCusto = models.DecimalField(
+    preco_custo = models.DecimalField(
         max_digits=10,
         decimal_places=2
     )
-    precoVenda = models.DecimalField(
+    preco_venda = models.DecimalField(
         max_digits=10,
         decimal_places=2
     )
 
     estoque = models.PositiveIntegerField(default=0)
-    estoqueMinimo = models.PositiveIntegerField(default=0)
+    estoque_minimo = models.PositiveIntegerField(default=0)
     
     ativo = models.BooleanField(default=True)
 

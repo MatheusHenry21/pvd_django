@@ -7,12 +7,12 @@ class Caixa(models.Model):
         ('FECHADO', 'fechado')
     ]
 
-    usuarioAbertura = models.ForeignKey(
+    usuario_abertura = models.ForeignKey(
         Usuario,
         on_delete=models.PROTECT,
         related_name='caixa_abertos'
     )
-    usuarioFechamento = models.ForeignKey(
+    usuario_fechamento = models.ForeignKey(
         Usuario,
         on_delete=models.PROTECT,
         related_name='caixa_fechados',
@@ -20,19 +20,19 @@ class Caixa(models.Model):
         null=True
     )
 
-    dataAbertura = models.DateTimeField(
+    data_abertura = models.DateTimeField(
         auto_now_add=True
     )
-    dataFechamento = models.DateTimeField(
+    data_fechamento = models.DateTimeField(
         blank=True,
         null=True
     )
 
-    valorInicial = models.DecimalField(
+    valor_inicial = models.DecimalField(
         max_digits=10,
         decimal_places=2
     )
-    valorFinal = models.DecimalField(
+    valor_final = models.DecimalField(
         max_digits=10,
         decimal_places=2,
         null=True,
@@ -72,7 +72,7 @@ class MovimentoCaixa(models.Model):
         choices=TIPO_CHOICES
     )
 
-    formaPagamento = models.CharField(
+    forma_pagamento = models.CharField(
         max_length=10,
         choices=FORMA_PAGAMENTO_CHOICES
     )
