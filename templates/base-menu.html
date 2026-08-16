@@ -1,36 +1,77 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}PVDPro{% endblock %}</title>
-</head>
-<body>
-    <div class="layout">
-        <aside class="sidebar">
-            <header>
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}PVDPro{% endblock %}</title>
+    </head>
+    <body>
 
-            </header>
-            <nav>
-                <a href=""></a>
-            </nav>
-            <footer></footer>
-        </aside>
+        <div class="layout">
 
-        <main>
-            <header>
+            <aside class="sidebar">
 
-            </header>
+                <header class="sidebar-header">
+                    <h1>PVDPro</h1>
+                </header>
 
-            <section >
-                {% block content %}
-                {% endblock %}
-            </section> 
+                <nav>
 
-            <footer>
+                    <a href="">
+                        Dashboard
+                    </a>
 
-            </footer>
-        </main>
-    </div>
-</body>
+                    <a href="">
+                        Vendas
+                    </a>
+
+                    <a href="">
+                        Produtos
+                    </a>
+
+                    <a href="">
+                        Clientes
+                    </a>
+
+                    <a href="">
+                        Caixa
+                    </a>
+
+                    <a href="">
+                        Crediário
+                    </a>
+
+                    <a href="">
+                        Relatórios
+                    </a>
+
+                </nav>
+
+                <footer>
+                    <a href="">
+                        Sair
+                    </a>
+                </footer>
+            </aside>
+
+            <main class="main">
+
+                <header class="main-header">
+                    {% block page_title %} 
+                    {% endblock %}
+                </header>
+
+                <section class="content">
+                    {% block content %}
+                    {% endblock %}
+                </section> 
+
+                <footer class="main-footer">
+                    <p>
+                        PVDPro
+                    </p>
+                </footer>
+            </main>
+        </div>
+    </body>
 </html>
