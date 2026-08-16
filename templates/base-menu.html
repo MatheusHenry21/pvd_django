@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{% block title %}PVDPro{% endblock %}</title>
 </head>
 <body>
-    
+    <div class="layout">
+        <aside class="sidebar">
+            <header>
+
+            </header>
+            <nav>
+                <a href=""></a>
+            </nav>
+            <footer></footer>
+        </aside>
+
+        <main>
+            <header>
+
+            </header>
+
+            <section >
+                {% block content %}
+                {% endblock %}
+            </section> 
+
+            <footer>
+
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
