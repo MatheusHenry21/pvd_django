@@ -1,11 +1,16 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %}PVDPro{% endblock %}</title>
+        <title>
+            {% block title %}
+            PVDPro
+            {% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css_base-menu.css' %}">
     </head>
-    <body>
+    <body> 
 
         <div class="layout">
 
