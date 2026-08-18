@@ -7,6 +7,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
+    background-color: #f5f6f8;
 }
 
 .layout {
@@ -16,12 +17,18 @@ body {
 
 .sidebar {
     width: 250px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #1f2937;
 }
 
 .sidebar-header {
     padding: 20px;
+}
+
+.sidebar-header h1 {
+    color: white;
 }
 
 .sidebar-nav {
@@ -32,16 +39,41 @@ body {
 }
 
 .sidebar-nav a {
+    color: #d1d5db;
+    display: block;
     text-decoration: none;
     padding: 12px 15px;
+    border-radius: 6px;
+}
+
+.sidebar-nav a:hover {
+    background-color: #374151;
+    color: white;
+    opacity: 0.8;
 }
 
 .sidebar-footer {
     margin-top: auto;
+    padding: 10px;
+}
+
+.sidebar-footer a {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+}
+
+.sidebar-footer a:hover {
+    opacity: 0.8;
+    color: white;
+    background-color: #374151;
 }
 
 .main {
     width: 1;
+    min-height: 100vh;
 }
 
 .main-header {
@@ -55,6 +87,6 @@ body {
     padding: 25px;
 }
 
-main-footer {
+.main-footer {
     padding: 20px 25px;
 }
