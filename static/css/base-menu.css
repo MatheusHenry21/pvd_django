@@ -52,6 +52,11 @@ body {
     opacity: 0.8;
 }
 
+.sidebar-nav a.activate {
+    background-color: #374151;
+    color: white;
+}
+
 .sidebar-footer {
     margin-top: auto;
     padding: 10px;
@@ -80,7 +85,18 @@ body {
     min-height: 70px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 25px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
 }
 
 .content {

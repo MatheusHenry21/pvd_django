@@ -22,7 +22,7 @@
 
                 <nav class="sidebar-nav">
 
-                    <a href="">
+                    <a href="{% url 'dashboard' %}" class="activate">
                         Dashboard
                     </a>
 
@@ -62,8 +62,16 @@
             <main class="main">
 
                 <header class="main-header">
-                    {% block page_title %} 
-                    {% endblock %}
+
+                    <div class="page-title">
+                        {% block page_title %} 
+                        {% endblock %}
+                    </div>
+                    
+                    <div class="user-area">
+                        <span>Usuario</span>
+                    </div>
+
                 </header>
 
                 <section class="content">
